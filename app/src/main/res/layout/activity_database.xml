@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.w2d4filedatabasethreads.DatabaseActivity">
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CREATE USER"
+        android:onClick="createUser"/>
+
+    <TextView
+        android:id="@+id/tvUsers"
+        android:text="test"
+        android:layout_below="@+id/btnCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnGetUser"
+        android:id="@+id/etGetEmail"
+        android:hint="EMAIL"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:id="@+id/btnGetUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnDel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="GET USER"
+        android:onClick="getUser"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="DELETE"
+        android:onClick="deleteUser"
+        android:id="@+id/btnDel"/>
+
+</RelativeLayout>
